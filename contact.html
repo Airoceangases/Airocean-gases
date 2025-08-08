@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 宏源气体</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header style="background: white;">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="宏源气体 Logo" style="width: 120px; height: auto;">
+                </div>
+                <nav>
+                    <ul style="list-style-type: none; padding-left: 0; display: flex; gap: 15px;">
+                        <li><a href="index.html" style="color: #000000;">首页</a></li>
+                        <li><a href="about.html" style="color: #000000;">关于我们</a></li>
+                        <li><a href="products.html" style="color: #000000;">产品与服务</a></li>
+                        <li><a href="applications.html" style="color: #000000;">应用案例</a></li>
+                        <li><a href="contact.html" style="color: #000000;">联系我们</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher" style="display: flex; gap: 8px;">
+                    <button class="lang-btn active" data-lang="zh" style="background: none; border: none; padding: 0; cursor: pointer;">
+                        <img src="https://flagcdn.com/cn.svg" alt="中文" style="width: 28px; height: auto;">
+                    </button>
+                    <button class="lang-btn" data-lang="en" style="background: none; border: none; padding: 0; cursor: pointer;">
+                        <img src="https://flagcdn.com/us.svg" alt="English" style="width: 28px; height: auto;">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <div class="eyebrow">CONTACT</div>
+            <h1 class="contact-title">让我们连接，共同推动未来</h1>
+            <p class="contact-subtitle">连接你到 纯度 与 性能</p>
+            <p class="contact-description">我们致力于质量与可持续发展，为您提供稳定的供应链、严格的安全标准与专业支持，确保您的运营高效且无忧。无论所属行业，我们都能提供高纯度与高性能的合适气体。</p>
+        </div>
+    </section>
+
+    <section class="contact-main">
+        <div class="container contact-grid">
+            <div class="contact-left">
+                <div class="contact-card">
+                    <h3 class="contact-card-title">宏源气体 中国</h3>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i>China, Henan, Luoyang, Yichuan County, Henan, 豫港大道东段658号（邮编 471312）</li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+13025612790">+1 302 561 2790</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:hygases@gmail.com">hygases@gmail.com</a></li>
+                        <li><i class="fa-regular fa-clock"></i>周一至周五 9:00 - 18:00</li>
+                    </ul>
+                    <div class="contact-actions">
+                        <a class="btn primary" href="mailto:hygases@gmail.com"><i class="fa-solid fa-paper-plane"></i> 发送邮件</a>
+                        <a class="btn secondary" href="tel:+13025612790"><i class="fa-solid fa-phone"></i> 拨打电话</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3 class="contact-card-title">宏源气体 美国</h3>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i>USA</li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+13025612790">+1 302 561 2790</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:hygases@gmail.com">hygases@gmail.com</a></li>
+                        <li><i class="fa-regular fa-clock"></i>周一至周五 9:00 - 18:00</li>
+                    </ul>
+                    <div class="contact-actions">
+                        <a class="btn primary" href="mailto:hygases@gmail.com"><i class="fa-solid fa-paper-plane"></i> 发送邮件</a>
+                        <a class="btn secondary" href="tel:+13025612790"><i class="fa-solid fa-phone"></i> 拨打电话</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form id="quoteForm" action="mailto:hygases@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="qName">姓名</label>
+                                <input type="text" id="qName" name="姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="qCompany">公司</label>
+                                <input type="text" id="qCompany" name="公司">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="qEmail">邮箱</label>
+                                <input type="email" id="qEmail" name="邮箱" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="qPhone">电话</label>
+                                <input type="tel" id="qPhone" name="电话">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="qProduct">需求产品/气体</label>
+                            <input type="text" id="qProduct" name="需求产品">
+                        </div>
+                        <div class="form-group">
+                            <label for="qMessage">项目描述 / 其他需求</label>
+                            <textarea id="qMessage" name="信息" rows="15" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary full">提交请求</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <div class="map embed">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.36225542222!2d112.4930420770723!3d34.417552398350345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x367886e6b198b34f%3A0x452755c7eb08f737!2sYichuan%20Hongyuan%20Gas%20Technology%20Co.%2C%20Ltd.%20%EF%BC%88Northeast%20Gate%EF%BC%89!5e0!3m2!1sen!2sus!4v1741846766776!5m2!1sen!2sus"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: white; border-top: 1px solid #000000;">
+        <div class="container">
+            <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="宏源气体 Logo" style="width: 120px; height: auto;">
+                </div>
+                <div class="footer-column">
+                    <div class="social-media">
+                        <h3 style="font-size: 16px; margin-bottom: 8px;">关注我们</h3>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 4px;"><a href="https://www.facebook.com/company" style="color: #000000; font-size: 13px;"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li style="margin-bottom: 4px;"><a href="https://twitter.com/company" style="color: #000000; font-size: 13px;"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li style="margin-bottom: 4px;"><a href="https://www.linkedin.com/company/hygas/?viewAsMember=true" style="color: #000000; font-size: 13px;"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li style="margin-bottom: 4px;"><a href="https://www.instagram.com/company" style="color: #000000; font-size: 13px;"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li style="margin-bottom: 4px;"><a href="https://www.youtube.com/company" style="color: #000000; font-size: 13px;"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="legal-info">
+                        <h3 style="font-size: 16px; margin-bottom: 8px;">法律信息</h3>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 4px;"><a href="/privacy-policy" style="color: #000000; font-size: 13px;">隐私政策</a></li>
+                            <li style="margin-bottom: 4px;"><a href="/terms-of-use" style="color: #000000; font-size: 13px;">使用条款</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="quick-links">
+                        <h3 style="font-size: 16px; margin-bottom: 8px;">快速链接</h3>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 4px;"><a href="index.html" style="color: #000000; font-size: 13px;">首页</a></li>
+                            <li style="margin-bottom: 4px;"><a href="about.html" style="color: #000000; font-size: 13px;">关于我们</a></li>
+                            <li style="margin-bottom: 4px;"><a href="products.html" style="color: #000000; font-size: 13px;">产品与服务</a></li>
+                            <li style="margin-bottom: 4px;"><a href="applications.html" style="color: #000000; font-size: 13px;">应用案例</a></li>
+                            <li style="margin-bottom: 4px;"><a href="contact.html" style="color: #000000; font-size: 13px;">联系我们</a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p style="font-size: 12px; margin-top: 10px;">&copy; 2023 宏源气体（香港）公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

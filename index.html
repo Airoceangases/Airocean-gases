@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header style="background: white;">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="images/logo.png" alt="宏源气体 Logo" style="width: 120px; height: auto;">
+                </div>
+                <nav>
+                    <ul style="list-style-type: none; padding-left: 0; display: flex; gap: 15px;">
+                        <li><a href="index.html" style="color: #000000;">首页</a></li>
+                        <li><a href="about.html" style="color: #000000;">关于我们</a></li>
+                        <li><a href="products.html" style="color: #000000;">产品与服务</a></li>
+                        <li><a href="applications.html" style="color: #000000;">应用案例</a></li>
+                        <li><a href="contact.html" style="color: #000000;">联系我们</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher" style="display: flex; gap: 8px;">
+                    <button class="lang-btn active" data-lang="zh" style="background: none; border: none; padding: 0; cursor: pointer;">
+                        <img src="https://flagcdn.com/cn.svg" alt="中文" style="width: 28px; height: auto;">
+                    </button>
+                    <button class="lang-btn" data-lang="en" style="background: none; border: none; padding: 0; cursor: pointer;">
+                        <img src="https://flagcdn.com/us.svg" alt="English" style="width: 28px; height: auto;">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域容器 -->
+    <section class="hero-slider-container">
+        <div class="hero-slider">
+            <!-- 第一个英雄区域 -->
+            <div class="hero-slide" style="background-image: url('images/hero-bg1.jpg');">
+                <div class="container">
+                    <h2>欢迎来到宏源气体</h2>
+                    <p>我们致力于通过创新技术和服务，推动行业进步。</p>
+                    <a href="about.html" class="cta-btn">了解更多</a>
+                </div>
+            </div>
+
+            <!-- 第二个英雄区域 -->
+            <div class="hero-slide" style="background-image: url('images/hero-bg2.jpg');">
+                <div class="container">
+                    <h2>高质量工业气体</h2>
+                    <p>提供各种工业气体解决方案，满足您的需求。</p>
+                    <a href="products.html" class="cta-btn">查看产品</a>
+                </div>
+            </div>
+
+            <!-- 第三个英雄区域 -->
+            <div class="hero-slide" style="background-image: url('images/hero-bg3.jpg');">
+                <div class="container">
+                    <h2>最新新闻与动态</h2>
+                    <p>了解我们的最新成就和行业动态。</p>
+                    <a href="news.html" class="cta-btn">阅读新闻</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 导航箭头 -->
+        <button class="slider-nav prev-btn" aria-label="上一张">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-nav next-btn" aria-label="下一张">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- 指示点 -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- 服务特色区域 -->
+    <section class="service-section">
+        <div class="service-content">
+            <h2>值得信赖的服务</h2>
+            <p class="subtitle">我们提供标准次日送达、当日送达服务，并支持24/7全天候监控，为您的业务提供可靠保障。</p>
+            
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3><i class="fas fa-user-tie"></i> 专属客户管理</h3>
+                    <p>从首次走访到交付及后续服务，我们的团队随时准备为您提供专业支持。</p>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-cogs"></i> 定制安装与设备设置</h3>
+                    <p>我们的气体专家会详细了解您的需求，构建优先考虑安全性和效率的系统。</p>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-flask"></i> 世界级实验室与气体包装</h3>
+                    <p>无论气体体积或类型如何，我们的先进实验室和高技能生产团队都能完美交付。</p>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-truck"></i> 卓越的配送服务</h3>
+                    <p>我们的司机在高压力环境中始终保持卓越表现，注重客户关怀、道路安全和现场安全。</p>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-chart-line"></i> 气瓶跟踪与遥测技术</h3>
+                    <p>停止为不在您手中的气瓶支付租金。通过遥测技术的移动警报、实时测量和使用趋势分析，享受可持续服务，减少配送次数。</p>
+                </div>
+                
+                <div class="service-item">
+                    <h3><i class="fas fa-laptop"></i> 在线订购与账户管理</h3>
+                    <p>追查发票和更新账单信息的日子已经过去——您可以自信且轻松地访问账户并重新订购。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色产品和服务区域 -->
+    <section class="featured-section">
+        <div class="featured-content">
+            <h2>特色产品和服务</h2>
+            <p class="subtitle">为您提供全方位的工业气体解决方案，从基础服务到先进技术，满足您的各种需求。</p>
+            
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="card-background" style="background-image: url('images/westair1.jpg');"></div>
+                    <div class="card-overlay">
+                        <div class="card-category">氮气服务</div>
+                        <div class="card-title">吹扫、加压与覆盖</div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="card-background" style="background-image: url('images/westair2.jpg');"></div>
+                    <div class="card-overlay">
+                        <div class="card-category">气瓶跟踪</div>
+                        <div class="card-title">精确的气瓶管理</div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="card-background" style="background-image: url('images/westair3.jpg');"></div>
+                    <div class="card-overlay">
+                        <div class="card-category">工艺管道设计与安装</div>
+                        <div class="card-title">优化您的气体工艺</div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="card-background" style="background-image: url('images/westair4.jpg');"></div>  
+                    <div class="card-overlay">
+                        <div class="card-category">遥测技术</div>
+                        <div class="card-title">指尖上的储罐管理</div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="card-background" style="background-image: url('images/westair5.jpg');"></div>
+                    <div class="card-overlay">
+                        <div class="card-category">氢气服务</div>
+                        <div class="card-title">下一代移动出行</div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card">
+                    <div class="card-background" style="background-image: url('images/westair6.jpg');"></div>
+                    <div class="card-overlay">
+                        <div class="card-category">丙烷服务</div>
+                        <div class="card-title">不一样的丙烷服务</div>
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Clients 区域 -->
+    <section class="clients-section">
+        <div class="clients-content">
+            <h2>我们的客户</h2>
+            <p class="subtitle">我们为众多知名企业提供优质的气体解决方案，从大型制造企业到医疗机构，从能源公司到科技巨头，我们致力于满足每一位客户的需求。</p>
+            
+            <div class="clients-grid">
+                <div class="client-card">
+                    <div class="client-logo-bg"></div>
+                    <div class="client-content">
+                        <div class="client-logo">
+                            <img src="images/bmw-logo.jpg" alt="BMW Logo">
+                        </div>
+                        <h3>BMW集团</h3>
+                        <p>为BMW汽车制造提供高纯度工业气体，支持精密制造工艺</p>
+                    </div>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-logo-bg"></div>
+                    <div class="client-content">
+                        <div class="client-logo">
+                            <img src="images/siemen_logo.jpg" alt="Siemens Logo">
+                        </div>
+                        <h3>西门子</h3>
+                        <p>为西门子电子制造提供特种气体，支持半导体生产</p>
+                    </div>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-logo-bg"></div>
+                    <div class="client-content">
+                        <div class="client-logo">
+                            <img src="images/basf_logo.jpg" alt="BASF Logo">
+                        </div>
+                        <h3>巴斯夫</h3>
+                        <p>为巴斯夫化工生产提供工业气体，支持化学反应工艺</p>
+                    </div>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-logo-bg"></div>
+                    <div class="client-content">
+                        <div class="client-logo">
+                            <img src="images/philips_logo.jpg" alt="Philips Logo">
+                        </div>
+                        <h3>飞利浦</h3>
+                        <p>为飞利浦医疗设备提供医用气体，支持医疗设备制造</p>
+                    </div>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-logo-bg"></div>
+                    <div class="client-content">
+                        <div class="client-logo">
+                            <img src="images/shell_logo.jpg" alt="Shell Logo">
+                        </div>
+                        <h3>壳牌</h3>
+                        <p>为壳牌能源生产提供专业气体，支持石油化工工艺</p>
+                    </div>
+                </div>
+                
+                <div class="client-card">
+                    <div class="client-logo-bg"></div>
+                    <div class="client-content">
+                        <div class="client-logo">
+                            <img src="images/bosch_logo.jpg" alt="Bosch Logo">
+                        </div>
+                        <h3>博世</h3>
+                        <p>为博世精密制造提供特种气体，支持高精度生产</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clients-stats">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">满意客户</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">行业领域</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">全天候服务</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">客户满意度</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部信息 -->
+    <footer style="background: white; border-top: 1px solid #000000;">
+        <div class="container">
+            <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="宏源气体 Logo" style="width: 120px; height: auto;">
+                </div>
+                <div class="footer-column">
+                    <div class="social-media">
+                        <h3 style="font-size: 16px; margin-bottom: 8px;">关注我们</h3>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 4px;"><a href="https://www.facebook.com/company" style="color: #000000; font-size: 13px;"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li style="margin-bottom: 4px;"><a href="https://twitter.com/company" style="color: #000000; font-size: 13px;"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li style="margin-bottom: 4px;"><a href="https://www.linkedin.com/company/hygas/?viewAsMember=true" style="color: #000000; font-size: 13px;"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li style="margin-bottom: 4px;"><a href="https://www.instagram.com/company" style="color: #000000; font-size: 13px;"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li style="margin-bottom: 4px;"><a href="https://www.youtube.com/company" style="color: #000000; font-size: 13px;"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="legal-info">
+                        <h3 style="font-size: 16px; margin-bottom: 8px;">法律信息</h3>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 4px;"><a href="/privacy-policy" style="color: #000000; font-size: 13px;">隐私政策</a></li>
+                            <li style="margin-bottom: 4px;"><a href="/terms-of-use" style="color: #000000; font-size: 13px;">使用条款</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="quick-links">
+                        <h3 style="font-size: 16px; margin-bottom: 8px;">快速链接</h3>
+                        <ul style="list-style-type: none; padding-left: 0;">
+                            <li style="margin-bottom: 4px;"><a href="index.html" style="color: #000000; font-size: 13px;">首页</a></li>
+                            <li style="margin-bottom: 4px;"><a href="about.html" style="color: #000000; font-size: 13px;">关于我们</a></li>
+                            <li style="margin-bottom: 4px;"><a href="products.html" style="color: #000000; font-size: 13px;">产品与服务</a></li>
+                            <li style="margin-bottom: 4px;"><a href="applications.html" style="color: #000000; font-size: 13px;">应用案例</a></li>
+                            <li style="margin-bottom: 4px;"><a href="contact.html" style="color: #000000; font-size: 13px;">联系我们</a></li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p style="font-size: 12px; margin-top: 10px;">&copy; 2023 宏源气体（香港）公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
